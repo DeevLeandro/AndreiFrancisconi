@@ -107,7 +107,6 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const phoneNumber = formData.phone.replace(/\D/g, '');
     const message = `Olá! Meu nome é ${formData.name}. Acabei de me inscrever para a Sessão de Diagnóstico. Meu email é: ${formData.email}`;
     const encodedMessage = encodeURIComponent(message);
     const empresaWhatsapp = "54981664862";
