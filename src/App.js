@@ -107,7 +107,6 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const phoneNumber = formData.phone.replace(/\D/g, '');
     const message = `Olá! Meu nome é ${formData.name}. Acabei de me inscrever para a Sessão de Diagnóstico. Meu email é: ${formData.email}`;
     const encodedMessage = encodeURIComponent(message);
     const empresaWhatsapp = "54981664862";
@@ -675,7 +674,7 @@ function App() {
               <div className="compact-image-column">
                 <div className="compact-image-wrapper">
                   <img 
-                    src="/images/Banner-2.png"
+                    src="/images/Banner-2.jpeg"
                     alt="Andrei Francisconi"
                     className="compact-mentor-photo"
                   />
